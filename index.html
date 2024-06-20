@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="image/favicon.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFood</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-utensils"></i> food </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#popular">Popular Menu</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#" id="login-btn" class="user"><i class="fas fa-user"></i></a>
+            <a href="#" id="logout-btn" style="display: none;"><i class="fas fa-sign-out-alt"></i></a>
+            <a href="#" id="cart-btn" class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="cart-notif">0</span>
+            </a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+    <!-- header section ends  -->
+
+
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <span>Welcome Foodies</span>
+            <h3>Different Spices For Different Tastes 😋</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde dolores temporibus hic quam debitis
+                tenetur harum nemo.</p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+
+        <div class="image">
+            <img src="image/home-img1.png" alt="" class="home-img">
+            <img src="image/home-parallax-img4.png" alt="" class="home-parallax-img">
+        </div>
+
+    </section>
+
+    <!-- home section ends  -->
+
+
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="image/about-img.png" alt="">
+        </div>
+
+        <div class="content">
+            <span>Why Choose Us?</span>
+            <h3 class="title">What Makes Our Food Delicious!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut explicabo, numquam iusto est a ipsum
+                assumenda tempore esse corporis?</p>
+            <a href="#" class="btn">Read More</a>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="image/serv-1.png" alt="">
+                    <h3>Fast Delivery</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/serv-2.png" alt="">
+                    <h3>Fresh Food</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/serv-3.png" alt="">
+                    <h3>Best Quality</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/serv-4.png" alt="">
+                    <h3>24/7 Support</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- menu section starts  -->
+
+    <section class="menu" id="menu">
+
+        <div class="heading">
+            <span>Our Menu</span>
+            <h3>Our Best Dishes</h3>
+        </div>
+
+        <div class="box-container">
+
+            <a href="#" class="box">
+                <img src="image/menu-1.png" alt="">
+                <div class="content">
+                    <h3>Delicious Food</h3>
+                    <div class="price">2500frs</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-2.png" alt="">
+                <div class="content">
+                    <h3>Delicious Food</h3>
+                    <div class="price">3500fs</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-3.png" alt="">
+                <div class="content">
+                    <h3>Delicious Food</h3>
+                    <div class="price">5000frs</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-4.png" alt="">
+                <div class="content">
+                    <h3>Delicious Food</h3>
+                    <div class="price">4500frs</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-5.png" alt="">
+                <div class="content">
+                    <h3>Delicious Food</h3>
+                    <div class="price">4500frs</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-6.png" alt="">
+                <div class="content">
+                    <h3>Delicious Food</h3>
+                    <div class="price">4500frs</div>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- menu section ends -->
+
+
+    <!-- popular section starts  -->
+
+    <section class="popular" id="popular">
+
+        <div class="heading">
+            <span>Popular Food</span>
+            <h3>Our Special Dishes</h3>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <div class="image">
+                    <img src="image/food-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious Burger</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">2000fr <span>2000frs</span></div>
+                    <div class="button-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('Delicious Burger', 2000, 1)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <div class="image">
+                    <img src="image/food-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious Burger</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">2000frs<span>2000frs</span></div>
+                    <div class="button-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('Delicious Pizza', 2000, 1)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <div class="image">
+                    <img src="image/food-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious Burger</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">2000frs <span>2000frs</span></div>
+                    <div class="button-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('Delicious Pizza', 2000, 1)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <div class="image">
+                    <img src="image/food-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious Burger</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">2000frs <span>2000frs</span></div>
+                    <div class="button-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('Delicious Pizza', 2000, 1)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <div class="image">
+                    <img src="image/food-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious Burger</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">2000frs <span>2000frs</span></div>
+                    <div class="button-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('Delicious Pizza', 2000, 1)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <div class="image">
+                    <img src="image/food-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Delicious Burger</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">2000frs <span>2000frs</span></div>
+                    <div class="button-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('Delicious Pizza', 2000, 1)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- popular section ends -->
+
+
+    <!-- order section starts  -->
+
+    <section class="order" id="order">
+
+        <div class="heading">
+            <span>Order Now</span>
+            <h3>Fastest Home Delivery</h3>
+        </div>
+
+        <div class="row">
+            <form action="">
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Your Name</span>
+                        <input type="text" placeholder="Enter your name" id="name" required>
+                    </div>
+                    <div class="input">
+                        <span>Your Number</span>
+                        <input type="text" placeholder="Enter your number" id="phone" required>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Your Order</span>
+                        <input type="text" placeholder="Enter food name" id="order" required>
+                    </div>
+                    <div class="input">
+                        <span>Additional Food</span>
+                        <input type="text" placeholder="Extra with food" id="extra_food">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>How Much?</span>
+                        <input type="number" placeholder="How many orders?" id="quantity" min="1" required>
+                    </div>
+                    <div class="input">
+                        <span>Date and Time</span>
+                        <input type="datetime-local" id="date_time" required>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Your Address</span>
+                        <textarea name="" placeholder="Enter your address" id="address" required></textarea>
+                    </div>
+                    <div class="input">
+                        <span>Your Message</span>
+                        <textarea name="" placeholder="Enter your message" id="message" required></textarea>
+                    </div>
+                </div>
+
+                <input type="submit" value="Order Now" class="btn">
+            </form>
+
+            <div class="image">
+                <img src="image/order-img.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- order section ends -->
+
+    <!-- blogs section starts  -->
+
+    <section class="blogs" id="blogs">
+
+        <div class="heading">
+            <span>Our Blogs</span>
+            <h3>Our Daily Posts</h3>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Delicious Food</a>
+                    <span>by Admin / 21st May, 2021</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/blog-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Delicious Food</a>
+                    <span>by Admin / 21st May, 2021</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/blog-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Delicious Food</a>
+                    <span>by Admin / 21st May, 2021</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- blogs section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#popular">Popular</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#blogs">Blogs</a>
+        </div>
+
+        <div class="credit">created by <span>iSoft</span> | all rights reserved</div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
