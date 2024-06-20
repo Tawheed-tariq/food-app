@@ -29,12 +29,13 @@ document.getElementById('cart-btn').addEventListener('click', () => {
 // Example cart items (in a real application, these would be fetched from the backend or local storage)
 let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
+//render cart items
 function renderCartItems() {
     const cartItemsContainer = document.getElementById('cart-items');
     cartItemsContainer.innerHTML = '';
 
     cartItems.forEach(item => {
-        const itemElement = document.createElement('tr');
+        const itemElement = document.createElement('tr'); //<tr></tr>
         itemElement.innerHTML = `
             <td>${item.name}</td>
             <td>${item.price} CHF</td>
@@ -52,6 +53,7 @@ function renderCartItems() {
     document.getElementById('cart-count').textContent = cartItems.reduce((total, item) => total + item.quantity, 0);
 }
 
+//increase quantity
 document.getElementById('cart-items').addEventListener('input', function (e) {
     if (e.target.classList.contains('quantity-input')) {
         const itemId = parseInt(e.target.getAttribute('data-id'));
@@ -62,6 +64,8 @@ document.getElementById('cart-items').addEventListener('input', function (e) {
     }
 });
 
+
+//delete button
 document.getElementById('cart-items').addEventListener('click', function (e) {
     if (e.target.classList.contains('delete-btn')) {
         const itemId = parseInt(e.target.getAttribute('data-id'));
@@ -73,22 +77,3 @@ document.getElementById('cart-items').addEventListener('click', function (e) {
 
 renderCartItems();
 
-// Checkout validation script
-
-document.getElementById('checkout-form').addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const name = document.getElementById('name').value;
-    const address = document.getElementById('address').value;
-    const email = document.getElementById('email').value;
-
-    if (name && address && email) {
-        // Process the order
-        alert('Order placed successfully!');
-        // Clear the cart
-        localStorage.removeItem('cart');
-        window.location.href = 'index.html';
-    } else {
-        alert('Please fill in all fields.');
-    }
-});
